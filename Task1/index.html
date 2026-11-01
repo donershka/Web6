@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task 1 | The missing cake</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="../vendor/jquery-3.7.1.js"></script>
+    <script defer src="data.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html">
+        <span class="brand-icon">P</span>
+        PARTY FILES
+        <span class="version">06</span>
+      </a>
+      <nav aria-label="Tasks">
+        <a class="current" href="../Task1/index.html">01 Selectors</a>
+        <a href="../Task2/index.html">02 Motion</a>
+      </nav>
+      <span class="author">
+        Kurmashev Damir
+        <span>IT-2511</span>
+      </span>
+    </header>
+    <div class="layout">
+      <aside class="sidebar">
+        <p class="eyebrow">THE INVESTIGATION</p>
+        <h2>Choose a clue</h2>
+        <p class="aside-intro">
+          Twenty ways to search the house. Every case starts from the party array.
+        </p>
+        <div id="case-list" aria-label="Investigation cases"></div>
+      </aside>
+      <main class="workspace">
+        <div class="intro">
+          <div>
+            <p class="eyebrow">TASK 1 / SELECTOR DETECTIVE</p>
+            <h1>The missing cake</h1>
+            <p>A birthday party. Four rooms. One missing cake at 21:30.</p>
+          </div>
+          <div class="party-time">
+            <strong>19:30 - 22:30</strong>
+            <span>PARTY TIMELINE</span>
+          </div>
+        </div>
+        <section class="result" aria-live="polite" aria-atomic="true">
+          <div>
+            <span id="result-label">READY TO INVESTIGATE</span>
+            <h2 id="result-title">Follow the clues</h2>
+            <p id="result-names">Choose a case to find guests or rooms.</p>
+          </div>
+          <button id="clear" type="button">Clear</button>
+          <button id="reset" type="button">Reset party</button>
+        </section>
+        <div id="house" aria-label="Party house"></div>
+        <div class="legend">
+          <strong>Things</strong>
+          <span data-icon="phone">Phone</span>
+          <span data-icon="glasses">Glasses</span>
+          <span data-icon="bag">Bag</span>
+          <span data-icon="cup">Cup</span>
+          <span data-icon="crumbs">Crumbs</span>
+          <span class="badge-key">AITU = student</span>
+        </div>
+        <details class="chain-panel">
+          <summary>jQuery chain for this case</summary>
+          <pre id="chain-code">Select a case to see its DOM query.</pre>
+        </details>
+      </main>
+    </div>
+  </body>
+</html>
